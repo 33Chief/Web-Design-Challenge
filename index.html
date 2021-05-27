@@ -9,38 +9,44 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body>
+<body class="body">
     <!--navbar-->
-<!--<div class="container">
-<div class="row">
-<div class="col-sm-8 col-md-8">-->
-                <h1>Summary: Latitude vs. X</h1>
-                <p></p>
-                <p></p>
-<!--</div>-->
 
-<!--<div class="col-sm-4 col-md-4">-->
-            <div class="sidenav">
-                <h1>Visualizations</h1>
-    
-        <!--row-->
+
+
+<section>
+    <div class="sidebar">
+        <h2 class="font_style">Visualizations</h2>
+
                 
-                 <a target="_blank" href="Resources/assets/images/Fig1.png">
-                     <img src="Resources/assets/images/Fig1.png" alt="Temperature" style="width:200px;height:200px;">
-                </a>
+            <a target="_blank" href="Resources/assets/images/Fig1.png">
+                <img src="Resources/assets/images/Fig1.png" alt="Temperature" style="width:200px;height:200px;">
+            </a>
     
-                 <a target="_blank" href="Resources/assets/images/Fig2.png">
-                    <img src="Resources/assets/images/Fig2.png" alt="Humidity" style="width:200px;height:200px;">
-                 </a>
+            <a target="_blank" href="Resources/assets/images/Fig2.png">
+                <img src="Resources/assets/images/Fig2.png" alt="Humidity" style="width:200px;height:200px;">
+            </a>
 
-                 <a target="_blank" href="Resources/assets/images/Fig3.png">
-                    <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" style="width:200px;height:200px;">
-                </a>
+            <a target="_blank" href="Resources/assets/images/Fig3.png">
+                <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" style="width:200px;height:200px;">
+            </a>
 
-                <a target="_blank" href="Resources/assets/images/Fig4.png">
-                    <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" style="width:200px;height:200px;">
-                </a>
-            </div>
-<!--</div>-->
+            <a target="_blank" href="Resources/assets/images/Fig4.png">
+                <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" style="width:200px;height:200px;">
+            </a>
+    </div>
+</section>
+    <div class="main">    
+        <h1 class="font_style">Summary: Latitude vs. X</h1>
+        <p> <img src="Resources/assets/images/Fig1.png" alt="Temperature" style="float:left;width:250px;height:250px;">
+            The purpose of the is project was to analyz how weather changes as you get 
+            closer to the equator. To accomplish this analysis, we first pulled data from 
+            the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</p>
+        <p>After assemblingthe dataset, we used Matplotlib to plot various aspects of the weather
+            vs. latitude. Factors we looked at include: temperature, cloudiness, wind speed, and humidity.
+            This site provides the source data and visualizations created as part of the analysis, as well
+            as explanations and descriptions of an trends and correlations witnessed.
+        </p>
+    </div>
 </body>
 </html>
