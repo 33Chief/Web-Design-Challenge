@@ -21,7 +21,7 @@
     <!--navbar-->
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" style="background-color: #84C5C2;" href="index.html">Latitude</a>
+          <a class="navbar-brand" href="index.html">Latitude</a>
           <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,10 +34,10 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-                  <a class="dropdown-item" href="humidity.html">Humidity</a>
-                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                  <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                  <a class="dropdown-item" href="visualizations/max_temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="visualizations/wind_speed.html">Wind Speed</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -53,43 +53,53 @@
     </div>
 
 
-<!--<section>-->
-<div class="row"> 
-    
-<!--</section>-->
-    <div class="main col-md-8 col-xs-12">    
-        <h1 class="title_style">Summary: Latitude vs. X</h1>
-        <hr>
-        <p> <img src="Resources/assets/images/Fig1.png" alt="Temperature" style="float:left;width:275px;height:275px;">
+<!--Content Section-->
+<div class="container">
+    <div class="row"> 
+        <div class="main col-md-7 col-xs-12">    
+            <h1 class="title_style">Summary: Latitude vs. X</h1>
+            <hr>
+            <p> <img src="Resources/assets/images/Fig1.png" alt="Temperature" style="float:left;width:275px;height:275px;">
             The purpose of the is project was to analyize how weather changes as you get 
             closer to the equator. To accomplish this analysis, we first pulled data from 
             the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</p>
-        <p>After assemblingthe dataset, we used Matplotlib to plot various aspects of the weather
+            <p>After assemblingthe dataset, we used Matplotlib to plot various aspects of the weather
             vs. latitude. Factors we looked at include: temperature, cloudiness, wind speed, and humidity.
             This site provides the source data and visualizations created as part of the analysis, as well
             as explanations and descriptions of an trends and correlations witnessed.
-        </p>
-    </div>
+            </p>
+        </div>
 
-    <div class="sidebar col-md-4 col-xs-12">
-        <h2 class="title_style">Visualizations</h2>
-        <hr>
-                
-            <a target="_blank" href="Resources/assets/images/Fig1.png">
-                <img src="Resources/assets/images/Fig1.png" alt="Temperature" style="width:210px;height:220px;">
-            </a>
-    
-            <a target="_blank" href="Resources/assets/images/Fig2.png">
-                <img src="Resources/assets/images/Fig2.png" alt="Humidity" style="width:210px;height:220px;">
-            </a>
-
-            <a target="_blank" href="Resources/assets/images/Fig3.png">
-                <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" style="width:210px;height:220px;">
-            </a>
-
-            <a target="_blank" href="Resources/assets/images/Fig4.png">
-                <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" style="width:210px;height:220px;">
-            </a>
+        <div class="main col-md-5 col-xs-12">
+            <h2 class="title_style">Visualizations</h2>
+            <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <a target="_blank" href="visualizations/max_temperature.html">
+                                <img src="Resources/assets/images/Fig1.png" alt="Temperature" style="width:210px;height:220px;">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a target="_blank" href="visualizations/humidity.html">
+                                <img src="Resources/assets/images/Fig2.png" alt="Humidity" style="width:210px;height:220px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <a target="_blank" href="visualizations/cloudiness.html">
+                                <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" style="width:210px;height:220px;">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a target="_blank" href="visualizations/wind_speed.html">
+                                <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" style="width:210px;height:220px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
 </div>
 </body>

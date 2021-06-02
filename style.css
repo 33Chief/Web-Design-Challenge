@@ -16,6 +16,10 @@
     /*padding: 30px 10px;*/
    /* margin-top: 20px;
     margin-left:20px;*/
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 10px 20px 15px; 
+    color:black;
     background-color: white;
   }
 
@@ -30,13 +34,20 @@
 
 p {
     font-family: sans-serif;
-    color: #9AA5B1;
+    color: darkgray;
     line-height: 2em;
     margin-top: 3em;
 }
 
-.nav-item{
-  text-align: right;
+.navbar{
+  background-color: white; 
+  font-size: 15px; 
+}
+.navbar-brand{
+  font-family:serif;
+  font-weight: bold;
+  background-color: #84C5C2;
+  color: white;
 }
 
 
