@@ -49,17 +49,25 @@ p {
   background-color: #84C5C2;
   color: white;
 }
+.viz_img{
+  width: 600px;
+  height: auto;
+}
 
 
 
 
-
-/*@media only screen and (max-width: 600px) {
-    .sidebar {
+@media only screen and (max-width: 800px) {
+    /*.sidebar {
         width: 100%;
         height: auto;
         position: relative;
         float: none;
         bottom: 0px;
+    }*/
+    .viz_img{
+      width: 500px;
+      height: auto;
     }
-}/*
+
+}
