@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Temperature</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+      <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <!--navbar-->
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">Latitude</a>
+          <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="visualizations/max_temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="visualizations/wind_speed.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparisons.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+    
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row"> 
+            <div class="main col-md-7 col-xs-12">    
+                <h1 class="title_style">Max Temperature</h1>
+                <hr>
+                <img src="../Resources/assets/images/Fig1.png" alt="Temperature"  style="width:600px;">
+                <br>
+                <p>As expected, the weather becomes significantly warmer as on approaches the equator (0 Deg. Latitude).
+                    More interestingly, however, is the fact that the southern hemisphere tends to be wartmer this time of
+                    year than the northern hemisphere. THis may be due to the tilt of the the Earth at the time of the
+                    year this datta was gathered.
+                </p>
+            </div>
+    
+            <div class="main col-md-5 col-xs-12">
+                <h2 class="title_style">Visualizations</h2>
+                <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <a target="_blank" href="max_temperature.html">
+                                    <img src="../Resources/assets/images/Fig1.png" alt="Temperature" style="width:210px;height:220px;">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a target="_blank" href="humidity.html">
+                                    <img src="../Resources/assets/images/Fig2.png" alt="Humidity" style="width:210px;height:220px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a target="_blank" href="cloudiness.html">
+                                    <img src="../Resources/assets/images/Fig3.png" alt="Cloudiness" style="width:210px;height:220px;">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a target="_blank" href="wind_speed.html">
+                                    <img src="../Resources/assets/images/Fig4.png" alt="Wind Speed" style="width:210px;height:220px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
