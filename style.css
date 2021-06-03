@@ -23,7 +23,7 @@
     background-color: white;
   }
 
-.title_style{color: #84C5C2;
+.title_style{color: #4AAAA5;
             font-family:serif;
             font-weight: bold;
   }
@@ -36,7 +36,7 @@ p {
     font-family: sans-serif;
     color: darkgray;
     line-height: 2em;
-    margin-top: 3em;
+    /*margin-top: 3em;*/
 }
 
 .navbar{
@@ -46,18 +46,24 @@ p {
 .navbar-brand{
   font-family:serif;
   font-weight: bold;
-  background-color: #84C5C2;
+  background-color: #4AAAA5;
   color: white;
 }
 .viz_img{
   width: 600px;
   height: auto;
 }
+.comp-img{
+  width: 100%;
+  height: auto;
+}
+.comp-title{
+  text-align: center;
+}
 
 
 
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     /*.sidebar {
         width: 100%;
         height: auto;

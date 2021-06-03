@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latitude</title>
+    <title>Comparison</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
       <!-- Bootstrap JS -->
@@ -52,55 +52,41 @@
         </nav>
     </div>
 
-
-<!--Content Section-->
-<div class="container">
-    <div class="row"> 
-        <div class="main col-xs-12 col-md-7">    
-            <h1 class="title_style">Summary: Latitude vs. X</h1>
-            <hr>
-            <p> <img src="Resources/assets/images/Fig1.png" alt="Temperature" style="float:left;width:275px;height:275px;">
-            The purpose of the is project was to analyize how weather changes as you get 
-            closer to the equator. To accomplish this analysis, we first pulled data from 
-            the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</p>
-            <p>After assemblingthe dataset, we used Matplotlib to plot various aspects of the weather
-            vs. latitude. Factors we looked at include: temperature, cloudiness, wind speed, and humidity.
-            This site provides the source data and visualizations created as part of the analysis, as well
-            as explanations and descriptions of an trends and correlations witnessed.
-            </p>
+    <!--Content Section-->
+    <div class="container main">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title_style">Comparison: Latitude vs X</h2>
+                <hr>
+                <p style="color:black;">Click any plot to get an in-depth analysis</p>
+            </div>
         </div>
-
-        <div class="main col-xs-12 col-md-5">
-            <h2 class="title_style">Visualizations</h2>
-            <hr>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <a target="_blank" href="visualizations/max_temperature.html">
-                                <img src="Resources/assets/images/Fig1.png" alt="Temperature" style="width:210px;height:220px;">
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a target="_blank" href="visualizations/humidity.html">
-                                <img src="Resources/assets/images/Fig2.png" alt="Humidity" style="width:210px;height:220px;">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <a target="_blank" href="visualizations/cloudiness.html">
-                                <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" style="width:210px;height:220px;">
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a target="_blank" href="visualizations/wind_speed.html">
-                                <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" style="width:210px;height:220px;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <a href="visualizations/max_temperature.html">
+                    <h4 class="title_style comp-title">vs. Max Temperature</h4>
+                    <img class="comp-img" src="Resources/assets/images/Fig1.png" alt="Temperature">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <a href="visualizations/humidity.html">
+                    <h4 class="title_style comp-title">vs. Humidity</h4>
+                    <img class="comp-img" src="Resources/assets/images/Fig2.png" alt="Humidity">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <a href="visualizations/cloudiness.html">
+                    <h4 class="title_style comp-title">vs. Cloudiness</h4>
+                    <img class="comp-img" src="Resources/assets/images/Fig3.png" alt="Temperature">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <a href="visualizations/wind_speed.html">
+                    <h4 class="title_style comp-title">vs. Wind Speed</h4>
+                    <img class="comp-img" src="Resources/assets/images/Fig4.png" alt="Humidity">
+                </a>
+            </div>
         </div>
     </div>
-</div>
-</body>
-</html>
